@@ -31,8 +31,8 @@ public class UserController implements UserApi {
 
     @Override
     public ResponseEntity<Void> deleteUser(Long userId) {
-        userService.DeleteUserInfo(userId)
+        userService.DeleteUserInfo(userId);
         return ResponseEntity.noContent().build();
     }
-    
+
 }
